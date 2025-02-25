@@ -1,59 +1,54 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('hintergrund.jpg');
+    background: url('bilder/hintergrund.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    color: #333;
+    color: white;
     text-align: center;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.8);
+header {
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    border-radius: 10px;
 }
 
-header h1 {
-    color: #d9534f;
+h1 {
+    margin: 0;
 }
 
-.product {
+.produkte {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     margin: 20px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    display: inline-block;
-    text-align: left;
-    max-width: 300px;
 }
 
-.product img {
+.produkt {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.produkt img {
     width: 100%;
     border-radius: 10px;
-}
-
-.price {
-    font-weight: bold;
-    color: #d9534f;
 }
 
 form {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-}
-
-button {
-    background: #d9534f;
-    color: #fff;
+input, button {
     padding: 10px;
     border: none;
     border-radius: 5px;
+}
+
+button {
+    background: #ff9900;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
 }
